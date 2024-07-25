@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.cart-icons {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.cart-icons span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cart-icons i {
+  font-size: 18px;
+  color: #000;
+}
+
+.hero {
+  background: url("https://i.imghippo.com/files/FGqeX1721907875.jpg") no-repeat;
+  height: 400px;
+  position: relative;
+  background-size: cover;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.order-now {
+  background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 100%);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.order-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.order-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.order-card h3 {
+  margin: 15px 0 10px;
+}
+
+.order-button {
+  background: #ff9a9e;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.img {
+  height: 180px;
+  width: 180px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: flex-start;
+  }
+
+  nav ul li a {
+    font-size: 11px;
+  }
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 24px;
+  }
+
+  .order-cards {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .order-card {
+    max-width: 300px;
+  }
+}
